@@ -1,0 +1,136 @@
+/*Font Definitions*/
+@font-face{
+	font-family:noto-sans;
+	font-style:normal;
+	src: url(f/noto.ttf);
+}
+@font-face{
+	font-family:noto-sans;
+	font-style:italic;
+	src: url(f/inoto.ttf);
+}
+
+/*Animation*/
+@keyframes txtrainbow {
+  0%{color:#f00;}
+  17%{color:#ff0;}
+  33%{color:#0f0;}
+  50%{color:#0ff;}
+  67%{color:#00f;}
+  83%{color:#f0f;}
+  100%{color:#f00;}
+}
+@keyframes bgrainbow {
+  0%{background-color:#0ff;}
+  17%{background-color:#00f;}
+  33%{background-color:#f0f;}
+  50%{background-color:#f00;}
+  67%{background-color:#ff0;}
+  83%{background-color:#0f0;}
+  100%{background-color:#0ff;}
+}
+
+/*Background. Core Content Should be placed in a <div class="page">*/
+body{
+	background-color: #000;
+	text-align: center;
+	line-height: 1.2;
+	background-image: linear-gradient(#111, #111, #555);
+	background-attachment: fixed;
+	height: 100%;
+	font-family:noto-sans;
+	animation-timing-function: linear;
+}
+
+/*Paragraphs. Short text should be handled with <h6>*/
+p{
+	text-align: justify;
+	text-indent: 48px;
+	font-size:18px;
+	font-family:noto-sans;
+	
+	/*Inline buttons*/
+	a{
+		margin:-2px;
+		line-height:1;
+	}
+	
+}
+
+/*The large "Page" that the core of the site is Hosted in*/
+.page{
+	color: #fff;
+	background-color: #000;
+	font-size:18px;
+	font-family:noto-sans;
+	line-height: 1.2;
+	border-width: 2px;
+	border-radius:48px;
+	border-color:#fff;
+	border-style: solid;
+	padding: 32px;
+	margin: 16px;
+}
+
+/*Main Page Rainbow header*/
+h1{ 
+	font-size:64px;
+	font-weight:bold;
+	animation: txtrainbow 20s infinite;
+	padding: 0px;
+	margin: 8px;
+	
+	/*Muli-Layered Shadow to give a richer white and a black undershadow.*/
+	text-shadow: 1px 1px 4px #000, 0px 0px 32px #fff, 0px 0px 32px #fff, 0px 0px 32px #fff, 0px 0px 16px #fff;
+}
+
+/*Section Header*/
+h2{
+	font-size:18px;
+	font-weight:bold;
+}
+
+/*Dev Notes*/
+h5{
+	background-color:#222;
+	border-radius:8px;
+	padding:8px;
+	
+	font-size:18px;
+	font-weight:medium;
+	text-align: center;
+}
+
+/*Short text should be handled here.*/
+h6{
+	font-size:18px;
+	font-weight:normal;
+}
+
+/*Web buttons*/
+a{
+	color: #fff;
+	background-color: #000;
+	
+	border-width: 2px;
+	border-radius:4px;
+	border-style: solid;
+	border-color: #fff;
+	
+	padding-left:8px;
+	padding-right:8px;
+	
+	font-size:18px;
+	font-weight:bold;
+	text-decoration: none;
+	/*line-height:1.8;*/
+	
+	margin: 2px;
+	white-space:nowrap;
+	transition-duration: 0.5s;
+	
+}
+a:hover{
+		color:#000;
+		background-color: #fff;
+	}
